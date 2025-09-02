@@ -1,11 +1,18 @@
-export default function App() {
-  return (
-    <>
-      <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
-        Click Me
-      </button>
+import { BrowserRouter as Router, Routes, Route } from "react-router";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import Home from "./Home";
 
-      <h1 className="text-3xl font-bold underline mt-4">Hello world!</h1>
-    </>
+function App() {
+  return (
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
+
+export default App;
