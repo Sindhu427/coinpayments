@@ -1,4 +1,7 @@
 import React from "react";
+import key1 from "../assets/key1.webp";
+import key2 from "../assets/key2.webp";
+import key3 from "../assets/key3.webp";
 
 const benefits = [
   {
@@ -10,7 +13,7 @@ const benefits = [
     ),
     description:
       "Save time and money by batching withdrawals from multiple callback addresses, paying just one transaction fee.",
-    image: "/images/withdrawal-fees.png",
+    image: key1,
   },
   {
     title: (
@@ -21,7 +24,7 @@ const benefits = [
     ),
     description:
       "See incoming deposits within seconds, not minutes. No more waiting for blockchain confirmations.",
-    image: "/images/transaction-verification.png",
+    image: key2,
   },
   {
     title: (
@@ -32,7 +35,7 @@ const benefits = [
     ),
     description:
       "Guarantee your payments with fixed-rate invoicing. Receive the exact amount you bill, every time.",
-    image: "/images/fixed-rate.png",
+    image: key3,
   },
 ];
 
