@@ -22,7 +22,7 @@ export default function metricssection() {
   };
 
   return (
-    <div className="bg-[#0B0E17] text-white py-16 px-6">
+    <div className="bg-[#080E1B] text-white py-16 px-6">
       {/* Metrics Section */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center border-gray-700 divide-y sm:divide-y-0 sm:divide-x divide-gray-700">
         <div className="py-6">
