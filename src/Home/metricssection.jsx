@@ -22,40 +22,50 @@ export default function metricssection() {
   };
 
   return (
+    // Metrics Section 1
     <div className="bg-[#080E1B] text-white py-16 px-6">
-      {/* Metrics Section */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center border-gray-700 divide-y sm:divide-y-0 sm:divide-x divide-gray-700">
-        <div className="py-6">
-          <h2 className="text-5xl font-bold">14+</h2>
-          <p className="mt-2 text-sm font-medium uppercase tracking-wider text-gray-300">
-            Years of Expertise <br /> in Cryptoprocessing
-          </p>
-        </div>
-        <div className="py-6">
-          <h2 className="text-5xl font-bold">250K+</h2>
-          <p className="mt-2 text-sm font-medium uppercase tracking-wider text-gray-300">
-            Merchants Across <br /> the Globe
-          </p>
-        </div>
-        <div className="py-6">
-          <h2 className="text-5xl font-bold">1M+</h2>
-          <p className="mt-2 text-sm font-medium uppercase tracking-wider text-gray-300">
-            Crypto Wallet <br /> Users
-          </p>
-        </div>
-        <div className="py-6">
-          <h2 className="text-5xl font-bold">$50B+</h2>
-          <p className="mt-2 text-sm font-medium uppercase tracking-wider text-gray-300">
-            Transaction Volume <br /> Processed
-          </p>
+      <div className="bg-[#080E1B] text-white py-16 px-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-gray-700 divide-y sm:divide-y-0 sm:divide-x divide-gray-700">
+          {/* 1 */}
+          <div className="py-6 pl-6 text-left">
+            <h2 className="text-7xl font-bold mb-2">14+</h2>
+            <p className="text-base font-bold text-white leading-snug">
+              Years of Expertise <br /> in Cryptoprocessing
+            </p>
+          </div>
+
+          {/* 2 */}
+          <div className="py-6 pl-6 text-left">
+            <h2 className="text-7xl font-bold mb-2">250K+</h2>
+            <p className="text-base font-bold text-white leading-snug">
+              Merchants Across <br /> the Globe
+            </p>
+          </div>
+
+          {/* 3 */}
+          <div className="py-6 pl-6 text-left">
+            <h2 className="text-7xl font-bold mb-2">1M+</h2>
+            <p className="text-base font-bold text-white leading-snug">
+              Crypto Wallet <br /> Users
+            </p>
+          </div>
+
+          {/* 4 */}
+          <div className="py-6 pl-6 text-left">
+            <h2 className="text-7xl font-bold mb-2">$50B+</h2>
+            <p className="text-base font-bold text-white leading-snug">
+              Transaction Volume <br /> Processed
+            </p>
+          </div>
         </div>
       </div>
 
       {/* Trusted By Section */}
-      <div className="mt-16 text-center max-w-5xl mx-auto">
-        <p className="text-gray-400 text-lg tracking-wide mb-8">
+      <div className=" text-center max-w-5xl mx-auto">
+        <div className="  text-center text-white font-extralight mb-12 md:text-[32px] xs:text-[26px]">
           Trusted by Thousands of Companies
-        </p>
+        </div>
+
         <Slider {...settings}>
           <div className="flex justify-center">
             <img

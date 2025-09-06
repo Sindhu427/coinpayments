@@ -29,36 +29,47 @@ const features = [
 
 export default function CardSection() {
   return (
-    <div className="bg-black text-white py-16 px-6">
-      {/* Features Grid */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-        {features.map((feature, index) => (
-          <div
-            key={index}
-            className="border border-gray-700 rounded-lg p-6 hover:border-blue-500 transition"
-          >
-            <h3 className="font-bold text-lg mb-2">{feature.title}</h3>
-            <p className="text-gray-300 text-sm leading-relaxed">
-              {feature.desc}
-            </p>
-          </div>
-        ))}
-      </div>
-
-      {/* Bottom CTA */}
-      <div className="text-center mt-12">
-        <p className="text-gray-300 text-sm mb-6">
-          Instant, reliable payments for businesses of any size.{" "}
-          <span className="font-semibold">Lower fees, faster settlements.</span>
-        </p>
-        <div className="flex justify-center gap-4">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition">
-            Get Started Now
-          </button>
-          <button className="bg-gray-200 hover:bg-gray-300 text-black px-6 py-2 rounded-full font-semibold transition">
-            Book a Demo
-          </button>
+    <div>
+      <div className="bg-black text-white py-20 px-16  md:px-40 ">
+        {/* Features Grid */}
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          {features.map((feature, index) => (
+            <div key={index} className="border border-white  p-10">
+              <h3 className="font-bold text-2xl mb-4">{feature.title}</h3>
+              <p className="text-gray-300 text-base leading-relaxed">
+                {feature.desc}
+              </p>
+            </div>
+          ))}
         </div>
+
+        {/* Bottom CTA */}
+        <div className="text-center mt-16">
+          <p className="text-white text-2xl mb-8">
+            Instant, reliable payments for businesses of any size.{" "}
+            <span className="font-semibold">
+              Lower fees, faster settlements.
+            </span>
+          </p>
+          <div className="flex justify-center gap-6">
+            <button className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-full font-semibold transition text-lg">
+              Get Started Now
+            </button>
+            <button className="  bg-gradient-to-br from-white to-blue-200 hover:text-black bg-gray-200 hover:bg-gray-300 text-black px-8 py-3 rounded-full font-semibold hover:bg-gradient-to-br hover:from-white hover:to-white transition text-lg">
+              Book a Demo
+            </button>
+          </div>
+        </div>
+      </div>
+      {/*sentence */}
+      <div className="bg-[#0B0F1A] text-center py-20 px-6 w-full">
+        <h2 className="text-white font-extrabold leading-tight">
+          <span className="text-blue-500 text-5xl md:text-6xl">40+</span>{" "}
+          <span className="text-5xl md:text-6xl">CRYPTOCURRENCIES</span>
+        </h2>
+        <p className="text-white/80 text-xl md:text-2xl tracking-widest mt-4 uppercase">
+          Accepted for Payments
+        </p>
       </div>
     </div>
   );

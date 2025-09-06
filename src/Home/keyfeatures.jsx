@@ -20,25 +20,25 @@ export default function KeyFeatures() {
   ];
 
   return (
-    <section className="bg-black text-white py-16 px-6">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-black text-white py-16 px-6 ">
+      <div className="max-w-7xl mx-auto ">
         {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-light text-center mb-12">
+        <h2 className="text-white xl:text-[75px] md:text-[56px] xs:text-[40px] text-center font-extralight md:leading-[85px] xs:leading-[48px] uppercase">
           KEY <span className="font-bold">FEATURES</span>
         </h2>
 
         {/* Feature Cards */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-6  mt-14  ">
           {features.map((feature, i) => (
             <div
               key={i}
-              className={`p-10 rounded-md flex flex-col min-h-[350px] ${
+              className={`p-10 rounded-md flex flex-col h-[420px]  ${
                 feature.type === "blue"
                   ? "bg-[#0B0E17]"
                   : "bg-black border border-white"
               }`}
             >
-              <h3 className="text-xl font-bold mb-10 leading-snug">
+              <h3 className="text-2xl font-bold mb-10 leading-snug ">
                 {feature.title}
               </h3>
               <p className="text-gray-300 text-base leading-relaxed">
@@ -48,14 +48,17 @@ export default function KeyFeatures() {
           ))}
         </div>
       </div>
+
       <div className="text-center mt-16">
-        <p className="text-lg mb-6">
+        <p className="text-white text-2xl mb-8">
           Connect with our sales team to explore tailored crypto payment
           solutions for your business.
         </p>
-        <button className="bg-gradient-to-r from-[#DDE6FF] to-[#B0C4FF] text-black px-6 py-3 rounded-full font-semibold shadow-md hover:opacity-90">
-          Book a Demo
-        </button>
+        <div className="flex justify-center gap-6">
+          <button className="  bg-gradient-to-br from-white to-blue-200 hover:text-black bg-gray-200 hover:bg-gray-300 text-black px-8 py-3 rounded-full font-semibold hover:bg-gradient-to-br hover:from-white hover:to-white transition text-lg">
+            Book a Demo
+          </button>
+        </div>
       </div>
     </section>
   );
